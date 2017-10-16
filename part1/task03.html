@@ -1,0 +1,117 @@
+<!--使用自身浮动法float，然后主流自适应-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="resetTB.css">
+	<meta charset="UTF-8">
+	<title>task03三栏式布局</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#wrapper
+		{
+			margin:20px;
+			padding: 20px;
+			background-color: #EEEEEE;
+			overflow:hidden;
+			font-family: "Microsoft YaHei"
+		}
+		#box2
+		{
+			background-color: white;
+			margin: 0px 160px 0px 240px;
+			padding: 20px;
+			border-style: solid;
+			border-width: 1px;
+			border-color: #999;
+		}
+		#box1
+		{
+			padding: 20px;
+			background-color: white;
+			float: left;
+			border-style: solid;
+			border-width: 1px;
+			border-color: #999;
+		}
+		.box1-img
+		{
+			position: absolute;
+		}
+		.box1-text
+		{
+			
+			width: 80px;
+			height: 80px;
+			position: relative;
+			margin-left: 100px;	
+		}
+		#box3
+		{
+			float: right;
+			border-style: solid;
+			border-color: #999;
+			border-width: 1px;
+			background-color:white;
+			padding: 30px 20px 30px 20px; 
+		}
+		.box3-pic1,
+		.box3-pic2,
+		.box3-pic3
+		{
+			display: block;
+		}
+		.box3-pic2
+		{
+			margin:30px 0px 30px 0px;
+		}
+		.clear
+		{
+			clear: both;
+		}		
+	</style>
+</head>
+<body>
+	<div id="wrapper" >
+		<div id="box1">
+			<img class="box1-img" src="http://pkjy.github.io/ife-task/2016_spring/part1/img/logo.png" alt="logo" width="80px" height="80px">
+			<p class="box1-text">TEAM CM</p> 
+		</div>
+		<div id="box3">
+			<img class="box3-pic1" src="http://pkjy.github.io/ife-task/2016_spring/part1/img/pjy.jpg" alt="boy" width="80px" height="80px">
+			<img class="box3-pic2" src="http://pkjy.github.io/ife-task/2016_spring/part1/img/pdx.jpg" alt="couple" width="80px" height="80px">
+			<img class="box3-pic3" src="http://pkjy.github.io/ife-task/2016_spring/part1/img/qcx.jpg" alt="大雄" width="80px" height="80px">
+		</div>
+		<div id="box2">
+			<p>关于我们的团队"TEAM CM"(code matters)<br/>
+			&nbsp我们来自不同的省份，纵跨小半个中国；我们来自不同的大学，有二本院也有985、211的重点大学；我们各处不同的阶段，有大三狗也有研究生。但我们有着相同的目标，同样的理想。正是这份信念让我们有缘聚在一起，一起通过百度IFE学院锻炼自己的水平。<br/>
+			关于我们的团队"TEAM CM"(code matters)<br/>
+			&nbsp我们来自不同的省份，纵跨小半个中国；我们来自不同的大学，有二本院也有985、211的重点大学；我们各处不同的阶段，有大三狗也有研究生。但我们有着相同的目标，同样的理想。正是这份信念让我们有缘聚在一起，一起通过百度IFE学院锻炼自己的水平。<br/>
+			关于我们的团队"TEAM CM"(code matters)<br/>
+			关于我们的团队"TEAM CM"(code matters)<br/>
+			&nbsp我们来自不同的省份，纵跨小半个中国；我们来自不同的大学，有二本院也有985、211的重点大学；我们各处不同的阶段，有大三狗也有研究生。但我们有着相同的目标，同样的理想。正是这份信念让我们有缘聚在一起，一起通过百度IFE学院锻炼自己的水平。<br/>
+			关于我们的团队"TEAM CM"(code matters)<br/>
+			&nbsp我们来自不同的省份，纵跨小半个中国；我们来自不同的大学，有二本院也有985、211的重点大学；我们各处不同的阶段，有大三狗也有研究生。但我们有着相同的目标，同样的理想。正是这份信念让我们有缘聚在一起，一起通过百度IFE学院锻炼自己的水平。<br/>
+			关于我们的团队"TEAM CM"(code matters)<br/>
+			关于我们的团队"TEAM CM"(code matters)<br/>
+			&nbsp我们来自不同的省份，纵跨小半个中国；我们来自不同的大学，有二本院也有985、211的重点大学；我们各处不同的阶段，有大三狗也有研究生。但我们有着相同的目标，同样的理想。正是这份信念让我们有缘聚在一起，一起通过百度IFE学院锻炼自己的水平。<br/>
+			关于我们的团队"TEAM CM"(code matters)<br/>
+			&nbsp我们来自不同的省份，纵跨小半个中国；我们来自不同的大学，有二本院也有985、211的重点大学；我们各处不同的阶段，有大三狗也有研究生。但我们有着相同的目标，同样的理想。正是这份信念让我们有缘聚在一起，一起通过百度IFE学院锻炼自己的水平。<br/>
+			关于我们的团队"TEAM CM"(code matters)<br/>
+			关于我们的团队"TEAM CM"(code matters)<br/>
+			&nbsp我们来自不同的省份，纵跨小半个中国；我们来自不同的大学，有二本院也有985、211的重点大学；我们各处不同的阶段，有大三狗也有研究生。但我们有着相同的目标，同样的理想。正是这份信念让我们有缘聚在一起，一起通过百度IFE学院锻炼自己的水平。<br/>
+			关于我们的团队"TEAM CM"(code matters)<br/>
+			&nbsp我们来自不同的省份，纵跨小半个中国；我们来自不同的大学，有二本院也有985、211的重点大学；我们各处不同的阶段，有大三狗也有研究生。但我们有着相同的目标，同样的理想。正是这份信念让我们有缘聚在一起，一起通过百度IFE学院锻炼自己的水平。<br/>
+			关于我们的团队"TEAM CM"(code matters)<br/>
+			关于我们的团队"TEAM CM"(code matters)<br/>
+			&nbsp我们来自不同的省份，纵跨小半个中国；我们来自不同的大学，有二本院也有985、211的重点大学；我们各处不同的阶段，有大三狗也有研究生。但我们有着相同的目标，同样的理想。正是这份信念让我们有缘聚在一起，一起通过百度IFE学院锻炼自己的水平。<br/>
+			关于我们的团队"TEAM CM"(code matters)<br/>
+			&nbsp我们来自不同的省份，纵跨小半个中国；我们来自不同的大学，有二本院也有985、211的重点大学；我们各处不同的阶段，有大三狗也有研究生。但我们有着相同的目标，同样的理想。正是这份信念让我们有缘聚在一起，一起通过百度IFE学院锻炼自己的水平。<br/>
+			关于我们的团队"TEAM CM"(code matters)<br/>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
