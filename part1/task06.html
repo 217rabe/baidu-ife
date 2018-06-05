@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>
+                task06通过HTML和CSS模拟报纸排版
+            </title>
+            <link href="resetTB.css" rel="stylesheet">
+                <style type="text/css">
+                    body{
+            background-color: #ccc;
+            font-family: "Microsoft YaHei";
+        }
+        .center
+        {
+            margin:0 auto;
+            width: 900px;
+            background-color: white;
+            padding: 0 30px;
+        }
+        .head
+        {
+            
+            position: relative;
+            margin-bottom: 30px;
+        
+        }
+        .box1
+        {
+
+            position: relative;
+            background-color: #db3e75;
+            color: white;
+            height: 60px;
+            width: 110px;
+           
+        }
+        .box1 p
+        {
+            position: absolute;
+            bottom: 2px;
+            color: white;
+            left: 4px;
+            text-align: center;
+        }
+        .box2 p
+        {
+            position: absolute;
+            bottom: 2px;
+            right: 0px;
+            color: #cc8091;
+        }
+        .underline1
+        {
+            width: 100%;
+            border: 2px;
+            color: #938e8c;
+            border-style: solid;
+        }
+        .content01
+        {
+            position: relative;
+            
+        }
+        .content01_text
+        {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 230px;
+
+        }
+        .text01
+        {
+            color: #333;
+            text-decoration: underline;
+            font-size: 24px;  
+        }
+        .content01 span
+        {
+            font-size: 12px;
+            margin-bottom: 10px;
+            display: block;
+        }
+      
+        .underline2
+        {
+            width: 100%;
+            border: 2px;
+            color: #CE7B7B;
+            border-style: solid;
+        }
+        .green
+        {
+            font-size: 110px;
+            color: #75b86b;
+            height: 120px;
+
+        }
+        .pink
+        {
+            
+            overflow: hidden;
+            margin-left: 20px;
+
+        }
+        .number32
+        {
+            font-size:55px;
+            color: #cc8091;
+            float: left;
+           
+       }
+       .red
+       {
+            
+            float: left;
+            height: 71px;
+            position: relative;
+
+
+    
+        }  
+          
+       .redcss1
+       {
+            font-size: 12px;
+            color: #cc8091;
+            position: absolute;
+            bottom: 10px;
+
+       }
+       .redcss
+       {
+            font-size: 21px;
+            color:#cc8091;
+            position: absolute;
+            bottom: 27px;
+       }
+       .content02
+       {
+            overflow: hidden;
+            margin-top: 15px;
+            margin-bottom: 50px;
+
+       }
+       .content02_1,
+       .content02_2
+       {
+            float:left;
+            width:220px;
+            margin-right: 20px; 
+       }
+       .what
+       {
+            color:#239923;
+            font-size: 15px;
+            margin-bottom: 8px; 
+       }
+       .qianduan1
+       {
+            font-size: 12px;
+            color: #767777;
+       }
+      .when
+      {
+            color:#D2994F;
+            font-size: 15px;
+            margin-bottom: 8px;
+      }
+      .qianduan2
+      {
+            color:#333;
+            font-size: 12px;
+      }
+       .content02_3
+       {
+            float: left;
+            width: 140px;
+       }
+       .how
+       {
+            color:#cc8091;
+            font-size: 15px;
+            margin-bottom: 8px;
+       }
+       .what_list
+       {
+            margin-top: 30px;
+            font-size: 12px;
+       }
+       .what_list span
+       {
+            color:#cc8091; 
+       }
+       .content03
+       {
+            
+            overflow: hidden;
+       }
+       .content03_1
+       {
+            float: left;
+            width: 380px;
+       }
+       .content03_1 span
+       {
+            color: #FDE945;
+            font-size: 72px;
+            font-family: 黑体;
+            font-weight: bold;
+       }
+       .title
+       {
+            color: #05184E;
+            font-size: 42px;
+            font-weight: bold;
+            font-family: 黑体;
+            margin-bottom: 15px;
+       }
+       .computer
+       {
+            float: right;
+            margin:5px;
+            font-size: 0px;
+       }
+       .qianduan4
+       {
+            font-size: 12px;
+            color: #767777;
+            overflow: hidden;
+       }
+       .content03_2
+       {
+            float: right;
+       }
+       .img1
+       {
+            position: relative;
+       }
+     
+       .qianduan5
+       {
+            position: absolute;
+            bottom: 0;
+            height: 60px;
+            width: 100%;
+            background-color: #333;
+            filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8;
+       }
+       .qianduan
+       {
+            color: white;
+            margin: 0 auto;
+            width: 70%;
+            font-size: 26px;
+            border-left-style: solid;
+            border-left-color: #8BDA8E;
+            padding-left: 20px;
+            padding-top: 15px;
+
+       }
+       .qianduan5 span
+       {
+            color: #8BDA8E;
+            font-size: 8px;
+
+       }
+       .img2
+       {
+            width: 458px;
+            height: 300px;
+            background-color: #EDEBCC;
+            margin-top: 40px;
+            position: relative;
+            overflow:auto;
+            font-family: 宋体;
+       }
+       ul
+       {
+            margin: 25px;
+            color:#767777; 
+            padding-left: 25px;
+       }
+       li
+       {
+            margin-bottom: 15px;
+            font-size: 16px;
+       }
+       .img2 ul li span
+       {
+            font-size: 8px;
+       }
+       .pinkbox
+       {
+            width: 245px;
+            float: left;
+            height: 145px;
+            color: white;
+            background-color:#D9525A;
+            bottom: 0px;
+            margin-top: 20px;
+           
+       }
+       .zero
+       {
+            float: left;
+            font-size: 100px;
+            font-family: 微软雅黑;
+            line-height: 100px;
+            height: 100px;
+            margin-top: 20px;
+            margin-left: 10px; 
+            border-right-style: solid;
+            border-right-color: white;
+       }
+       .zero_left
+       {
+            float:left; 
+            margin-top: 40px;
+            margin-left: 15px;
+            
+       }
+       .nums
+       {
+            font-size: 20px;
+       }
+       .hello
+       {
+            
+            font-size: 8px;
+            font-family: 微软雅黑;
+       }
+       .world
+       {
+            float: left;
+            width: 170px;
+            height: 50px;
+            margin:10px;
+            font-size: 14px;
+            color: #333;
+            font-style: oblique;
+       }
+       .world p
+       {
+            position: relative;
+       }
+       .left
+       {
+            font-size: 72px;
+            color:#d45d5c;
+            font-family: 黑体;
+            line-height:30px;
+            position: relative;
+            font-style: normal;
+            top: 30px;
+       }
+       .right
+       {
+            font-size: 72px;
+            color: #d45d5c;
+            font-family: 黑体;
+            line-height: 30px;
+            position: absolute;
+            font-style: normal;
+            top: 105px;
+       }
+       .foot
+       {
+            width: 100%;
+            color: #dedede;
+            border-style: solid;
+            margin-top: 30px;
+       }
+       .footer
+       {
+            overflow: hidden;
+            padding-bottom: 50px;
+       }
+       .baidu
+       {
+            color: #d45d5c;
+            font-size: 8px;
+            font-family: 黑体;
+            float: right;
+       }
+                </style>
+            </link>
+        </meta>
+    </head>
+    <body>
+        <div class="center">
+            <div class="head">
+                <div class="box1">
+                    <p>
+                        ife.baidu.com
+                    </p>
+                </div>
+                <div class="box2">
+                    <p>
+                        2016.03
+                    </p>
+                    <hr class="underline1">
+                    </hr>
+                </div>
+            </div>
+            <div class="content01">
+                <img alt="" src="file:///D:/other_ife/BaiduIFE/firstgrade/task06/image/picture01.jpg">
+                    <div class="content01_text">
+                        <hr class="underline2">
+                            <p class="text01">
+                                <b>
+                                    ABOUT
+                                    <br/>
+                                    TECHNOLOGE
+                                </b>
+                            </p>
+                            <span>
+                                About technologe about technologe about technologe
+                            </span>
+                            <div class="green">
+                                700
+                            </div>
+                            <div class="pink">
+                                <div class="number32">
+                                    3.2
+                                </div>
+                                <div class="red">
+                                    <div class="redcss">
+                                        css
+                                    </div>
+                                    <div class="redcss1">
+                                        csscsscsscssc
+                                    </div>
+                                </div>
+                            </div>
+                        </hr>
+                    </div>
+                </img>
+            </div>
+            <div class="content02">
+                <div class="content02_1">
+                    <p class="what">
+                        <u>
+                            <b>
+                                What
+                            </b>
+                        </u>
+                    </p>
+                    <p class="qianduan1">
+                        前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                    </p>
+                </div>
+                <div class="content02_2">
+                    <p class="when">
+                        <u>
+                            <b>
+                                When
+                            </b>
+                        </u>
+                    </p>
+                    <p class="qianduan2">
+                        前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                    </p>
+                </div>
+                <div class="content02_3">
+                    <p class="how">
+                        <u>
+                            <b>
+                                How
+                            </b>
+                        </u>
+                    </p>
+                    <p class="qianduan2">
+                        前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前
+                    </p>
+                    <div class="what_list">
+                        <p>
+                            What-------
+                            <span>
+                                40%
+                            </span>
+                        </p>
+                        <p>
+                            What-------
+                            <span>
+                                30%
+                            </span>
+                        </p>
+                        <p>
+                            What-------
+                            <span>
+                                30%
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="content03">
+                <div class="content03_1">
+                    <div class="title">
+                        <span>
+                            THE
+                        </span>
+                        TECHNOLOGE
+                        <br/>
+                        OF FRONT
+                        <br/>
+                        前端技术领域
+                    </div>
+                    <hr style="height: 2px;margin-bottom: 15px;">
+                        <div class="qianduan4">
+                            前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前
+                            <img alt="computer" class="computer" src="https://sagitarioo.github.io/BaiduIFE/firstgrade/task06/image/picture02.jpg">
+                                前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                                <br/>
+                                前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端
+                            </img>
+                        </div>
+                    </hr>
+                </div>
+                <div class="content03_2">
+                    <div class="img1">
+                        <img alt="computer" src="https://sagitarioo.github.io/BaiduIFE/firstgrade/task06/image/picture03.jpg">
+                            <div class="qianduan5">
+                                <div class="qianduan">
+                                    前端技术
+                                    <span>
+                                        <i>
+                                            前端技术前端技术
+                                        </i>
+                                    </span>
+                                </div>
+                            </div>
+                        </img>
+                    </div>
+                    <div class="img2">
+                        <ul>
+                            <li>
+                                前端前端前端前端前端前端.................
+                                <span>
+                                    <i>
+                                        前端
+                                    </i>
+                                </span>
+                            </li>
+                            <li>
+                                前端前端前端前端.........................
+                                <span>
+                                    <i>
+                                        前端前
+                                    </i>
+                                </span>
+                            </li>
+                            <li>
+                                前端前端前端前端前端前端前端............
+                                <span>
+                                    <i>
+                                        前端
+                                    </i>
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="pinkbox">
+                            <p class="zero">
+                                0
+                            </p>
+                            <div class="zero_left">
+                                <p class="nums">
+                                    <i>
+                                        ONE TWO
+                                        <br/>
+                                        THREE FOUR FIVE
+                                    </i>
+                                </p>
+                                <p class="hello">
+                                    hello world hello world
+                                    <br/>
+                                    hello world
+                                </p>
+                            </div>
+                        </div>
+                        <div class="world">
+                            <p>
+                                <span class="left">
+                                    "
+                                </span>
+                                world hello world world hello world hello world hello world hello world hello world hello world hello hello
+                                <span class="right">
+                                    "
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <hr class="foot">
+                <div class="baidu">ife.badu.com</div>
+            </div>
+        </div>
+    </body>
+</html>

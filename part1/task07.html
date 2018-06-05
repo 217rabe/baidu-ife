@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task07实现常的技术产品官网的页面架构及样式布局
+	</title>
+	<link rel="stylesheet" href="resetTB.css">
+	<style>
+		body
+		{
+			font-family: "微软雅黑";
+		}
+		.header
+		{
+			height: 50px;
+		}
+		.header ul
+		{
+			list-style: none;
+			margin-top: 0px;
+			line-height: 50px;
+		}
+		.header ul li
+		{
+			display: inline-block;
+			line-height: 50px;
+			height: 50px;
+		}
+		.header ul li a
+		{
+			line-height: 50px;
+			height: 50px;
+		}
+		.rightbar
+		{
+			float: right;
+			margin-right: 20px;
+		}
+		.leftbar
+		{
+			float: left;
+		}
+	
+		.content1
+		{
+			position: relative;
+			background-image:url(task07/image/picture01.jpg);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			height: 500px;
+		}
+		.content1 h1
+		{
+			position: absolute;
+			top:60px;
+			left: 120px;
+			font-size: 80px;
+			color: white;
+
+		}
+		.line1
+		{
+			position: absolute;
+			color: white;
+			font-size: 28px;
+			top: 220px;
+			left: 120px;
+		}
+		.line2
+		{
+			position: absolute;
+			color: white;
+			font-size: 20px;
+			top:280px;
+			left: 120px;
+		}
+		.botton1
+		{
+			position: absolute;
+			color: white;
+			top: 320px;
+			left: 120px;
+		}
+		.icon
+		{
+			background-color: white;
+			width: 100%;
+			font-size: 0px;
+			
+		}
+		.icon1
+		{
+			display: inline-block;
+			width: 25%;
+			margin:80px 0px;
+
+		}
+		.icon1 li
+		{
+			text-align: center;
+			font-size: 18px;
+			color: #c2c2c2; 
+			margin:10px 0px;
+		}
+		.icon1_li
+		{
+			border-right-style: solid;
+			border-right-color:#c2c2c2;
+		}
+		.content2
+		{
+			width: 100%;
+			height: 500px;
+			background-color: #eee;
+		}
+
+
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<ul>
+			<li class="leftbar"><img src="task07/image/icon06.jpg" alt="books"></li>
+			<li class="leftbar">看世界@PKJY</li>
+			<li class="rightbar"><a href="#">首页</a></li>
+			<li class="rightbar"><a href="#">最新活动</a></li>
+			<li class="rightbar"><a href="#">项目介绍</a></li>
+			<li class="rightbar"><a href="#">爱心社区</a></li>
+			<li class="rightbar"><a href="#">关于我们</a></li>
+			<li class="rightbar"><a href="#"><img src="http://pkjy.github.io/ife-task/2016_spring/part1/img/task07-header01.png" alt="people">登录</a></li>
+		</ul>
+	</div>
+	<div class="content1">
+		<h1>Time of new life</h1>
+		<p class="line1">新时代，年轻的人们让我们一起</p>
+		<p class="line2">体验新生活，享受新生活</p>
+		<button class="botton1">开始体验</button>
+	</div>	
+	<div class="icon">
+			<ul class="icon1">
+				<li><img src="task07/image/icon01.jpg" alt=""></li>
+				<li class="icon1_li">打造全新世界观，让你更爱<br>你的生活</li>
+			</ul>
+			<ul class="icon1">
+				<li><img src="task07/image/icon02.jpg" alt=""></li>
+				<li class="icon1_li">丰富多彩的公益活动，发挥新世界的<br>主人公意识</li>
+			</ul>
+			<ul class="icon1">
+				<li><img src="task07/image/icon03.jpg" alt=""></li>
+				<li class="icon1_li">时尚的新理念，超前体验未<br>知的生活</li>
+			</ul>
+			<ul class="icon1">
+				<li><img src="task07/image/icon04.jpg" alt=""></li>
+				<li>完善的培养机制，培养你全新<br>的世界观</li>
+			</ul>
+	</div>
+</body>
+</html>
